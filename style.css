@@ -1,0 +1,80 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(211, 211, 211);
+}
+.wrapper {
+  height: 100%;
+  width: 100%;
+}
+.calculator {
+  background-color: rgb(99, 99, 99);
+  width: 500px;
+  height: 600px;
+  border: 5px solid rgb(170, 170, 170);
+  border-radius: 10px;
+}
+.display {
+  height: 100px;
+  background-color: rgb(63, 63, 63);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 38px;
+}
+.buttons {
+  margin: 10px;
+  border-radius: 10px;
+  height: 460px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.buttons > div {
+  height: 100%;
+  width: 100%;
+  color: white !important;
+  background-color: rgb(34, 34, 34);
+}
+
+@media only screen and (min-width: 412px) {
+  .buttons > div:hover {
+    background-color: transparent !important;
+    border: 2px solid rgb(34, 34, 34);
+  }
+}
+.buttons > div:active {
+  background-color: transparent !important;
+  border: 2px solid rgb(34, 34, 34);
+}
+
+.equal {
+  grid-row: 4/7;
+  grid-column: 4/5;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+#no0 {
+  grid-column: 1/3;
+}
+
+#backspace,
+#divider {
+  font-size: 32px;
+}
